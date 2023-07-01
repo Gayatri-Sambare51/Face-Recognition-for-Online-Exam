@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+header {
+    padding: 30px;
+    background-color: rgb(117, 71, 202);
+}
+
+nav {
+    background-color:  rgb(41, 34, 34);
+    overflow: hidden;
+    
+}
+
+nav a {
+    text-decoration: none;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    text-align: center;
+    float: left;
+    color: white;
+    height:100%;
+    border:2 ;
+    background-color:rgba(209, 20, 51, 0.74);
+}
+
+       
+.link {
+    padding: 20px 100px;
+    
+    background-color: rgb(41, 34, 34);
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
+
+.active, .link:hover {
+    color:rgb(228, 164, 27)
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    }
+    
+    .column {
+    float: left;
+    width: 40%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    }
+    .card {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    }
+    .home-intructions-card{
+      box-shadow: 0 10px 20px 0 rgba(17, 17, 17, 0.623);
+      margin: 10px;
+      padding-left: 50px;
+      padding-right: 50px;
+      }
+    
+    .containersub {
+      padding-left: 100px;
+    }
+    
+    .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+    }
+    
+    .container {
+    padding: 0 16px;
+    }
+    
+    .outercontainer {
+      padding-left: 50px;
+    }
+    
+    .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+    
+    .title {
+    color: grey;
+    }
+    
+    .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    }
+    
+    .button:hover {
+    background-color: #555;
+    }
+    
+    @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+    }
+
+    .langauge-name {
+        color: black;
+        font-family:cursive;
+    }
+
+    .langauge-attemp{
+        color:saddlebrown;
+    }
+
+    .main{
+        margin-top:50px;
+      }
+      
+      h1.title { 
+       font-size: 50px;
+       font-family: 'Passion One', cursive; 
+       font-weight: 400; 
+      }
+      
+      hr{
+       width: 10%;
+       color: #fff;
+      }
+      
+      .form-group{
+       margin-bottom: 15px;
+      }
+      
+      label{
+       margin-bottom: 15px;
+      }
+      
+      input,
+      input::-webkit-input-placeholder {
+          font-size: 11px;
+          padding-top: 3px;
+      }
+      
+      .main-login{
+        background-color: #fff;
+          /* shadows and rounded borders */
+          -moz-border-radius: 2px;
+          -webkit-border-radius: 2px;
+          border-radius: 2px;
+          -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+          -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+      
+      }
+      .form-control {
+          height: auto!important;
+      padding: 8px 12px !important;
+      }
+      .input-group {
+          -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+          -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+          box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+      }
+      .main-center{
+        margin-top: 30px;
+        margin: 0 auto;
+        max-width: 400px;
+          padding: 10px 40px;
+       background:#175e7a;
+           color: #FFF;
+          text-shadow: none;
+       -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+      -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+      box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+      
+      }
+      span.input-group-addon i {
+          color: #fff;
+          font-size: 17px;padding:10px;
+      }
+      
+      .login-button{
+       margin-top: 5px;
+      }
+      
+      .login-register{
+       font-size: 11px;
+       text-align: center;
+      }
+      
+      .site-header {
+          background-color: rgba(0, 0, 0, .85);
+          -webkit-backdrop-filter: saturate(180%) blur(20px);
+          backdrop-filter: saturate(180%) blur(20px);
+      }
+      .site-header a { 
+       color:#fff;
+      }
+
+      #video {
+        border: 1px solid black;
+        width: 320px;
+        height: 240px;
+    }
+
+    #photo {
+        border: 1px solid black;
+        width: 320px;
+        height: 240px;
+    }
+
+    #canvas {
+        display: none;
+    }
+
+    .camera {
+        width: 340px;
+        display: inline-block;
+    }
+
+    .camera-card {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 50px 50px;
+
+    border-color: rgb(29, 26, 197);
+      border-style:groove;
+      transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+      border-radius: 5px;
+    }
+    .output {
+        width: 340px;
+        display: inline-block;
+    }
+
+    #startbutton {
+        background-color:skyblue;
+          border-color: rgb(223, 55, 55);
+           border-style:groove;
+          transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+            border-radius: 5px;
+          padding: 10px 20px;
+           
+    }
+.active, #startbutton:hover{
+    background-color: rgba(0, 0, 0, 0.788);
+    color: white;
+    border-color: cyan;
+}
+
+.active, .button-card:hover{
+    background-color: rgb(28, 15, 141);
+    color: rgb(81, 207, 81);
+    border-color: rgb(255, 238, 0);
+}
+
+    .button-card {
+      background-color:rgb(90, 221, 177);
+      border-color: rgb(223, 55, 55);
+      border-style:groove;
+      transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+      border-radius: 5px;
+      padding: 10px 20px;     
+    }
+    .contentarea {
+        font-size: 16px;
+        font-family: Arial;
+        text-align: center;
+    }
+
+    .text-h5 {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-style: inherit;
+        color:cornsilk;
+    }

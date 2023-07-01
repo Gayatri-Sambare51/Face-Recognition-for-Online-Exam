@@ -1,0 +1,57 @@
+{% load static %}
+<!doctype html>
+
+<header>
+  <link rel="stylesheet" href="{% static 'styles/style1.css' %}">
+  
+    <title>Saving Image</title>
+</header>
+
+<body>
+  
+    <div class="outercontainer">
+      <div class="row">
+        <div class="column">
+          <div class="camera-card">
+            <div class="homecontent">
+              <center>
+                <div class="camera">
+                  <video id="video">Video stream not available.</video>
+                </div>  
+              </center>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="camera-card">
+            <center>
+              <canvas id="canvas"></canvas>
+              <div class="output">
+                <form action="home" method="get" enctype="multipart/form-data">
+                  {% csrf_token %}
+                <img id="photo" name = 'userimage' alt="The screen capture will appear in this box.">
+              </div>
+            </center>  
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <div class="outercontainer">
+      <div class="row">
+        <div class="column">
+          <center>
+            <button class="button-card">Back</button>&nbsp;&nbsp;
+            <button id="startbutton" >Take photo</button>&nbsp;&nbsp;
+            <button type="submit">Submit</button>
+          </center>
+        </div>
+      </div>
+    </div>
+  </form>
+  
+  <script src="{% static 'js/captureImg.js' %}"></script>
+ 
+</body>
+
+</html>

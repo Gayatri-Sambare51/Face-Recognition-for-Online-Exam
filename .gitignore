@@ -1,0 +1,8 @@
+# Project files and directories
+/media/
+/application/
+
+**/migrations
+*.DS_Store
+**/__pycache__
+**/.DS_Store

@@ -1,8 +1,7 @@
 # Project files and directories
 
-/application/
-
-
+application
+db.sqlite3
 
 # Ignore media files directory (if using Django's default setup)
 /media/

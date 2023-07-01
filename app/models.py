@@ -68,7 +68,6 @@ def facerecognize(user):
                         # current_image = face_recognition.load_image_file(img)
                         face_encodings = face_recognition.face_encodings(img)[0]
                      
-                        
                         try: 
                                 check=face_recognition.compare_faces([face_encodings], face_1_face_encoding)
                                 if check[0]:

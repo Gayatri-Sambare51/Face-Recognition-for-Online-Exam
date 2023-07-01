@@ -1,8 +1,33 @@
 # Project files and directories
-/media/
+
 /application/
 
-**/migrations
-*.DS_Store
-**/__pycache__
-**/.DS_Store
+
+
+# Ignore media files directory (if using Django's default setup)
+/media/
+
+# Ignore virtual environment directory (if using virtual environments)
+venv/
+
+# Ignore IDE and editor-specific files
+*.pyc
+*.pyo
+.vscode/
+.idea/
+
+# Ignore environment configuration files
+.env
+
+# Ignore log files
+*.log
+
+# Ignore secret keys and sensitive information
+*.secret
+*.key
+*.pem
+*.p12
+
+# Ignore generated files or directories
+__pycache__/
+*.egg-info/

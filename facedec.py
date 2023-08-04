@@ -17,7 +17,7 @@ def faceCaptureSave():
                 cv2.destroyWindow("cam-test")
                 img="/media/profil_images/{}.png".format(img_counter)
                 cv2.imwrite(img, frame)
-                print("{} written!".format(img))
+                print("{} writtenn!".format(img))
                 img_counter += 1
                 print(1)
 

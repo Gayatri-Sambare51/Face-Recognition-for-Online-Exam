@@ -22,12 +22,15 @@ def faceCaptureSave(username):
                 # cv2.destroyWindow("cam-test")
                 img="media/{}.jpg".format(username)
                 cv2.imwrite(img, frame)
-                
+                print("111")
                 print("{} written!".format(img))
+                print("111")
                 img_counter += 1
-                
+                print("111")
                 img = str(img)
+                print("111")
                 return img
+                
         
         else:
                 #cv2.waitKey(0)
@@ -40,9 +43,10 @@ def facerecognize(user):
         check = False          
         try:
                 
-                cam = cv2.VideoCapture(0,cv2.CAP_V4L2)   # 0 -> index of camera
+                cam = cv2.VideoCapture(0)  # 0 -> index of camera
                 s, img = cam.read()
-               
+                # cam = cv2.VideoCapture(0,cv2.CAP_ANY)   # 0 -> index of camera
+                # s, frame = cam.read()
                 if s:    
                         # frame captured without any errors
                       

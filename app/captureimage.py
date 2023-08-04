@@ -15,7 +15,6 @@ else:
     cv2.imshow("test", frame)
 
     img = "images/{}.png".format(img_counter)
-
     cv2.imwrite(img, frame)
     print("{} written!".format(img))
     img_counter += 1
